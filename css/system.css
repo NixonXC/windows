@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sen&display=swap');
+:root {
+    --darkbg: #141114;
+    --smallfont: 'Sen', sans-serif;
+    --headerfont: 'Roboto', sans-serif;
+}
+body {
+    background-image: url("background.png");
+}
+.swipebox {
+    display: flex;
+}
+#ct {
+    vertical-align: middle;
+}
+.alignright {
+    vertical-align: middle;
+}
+.trash {
+    padding-top: 3px;
+    width: 100px;
+    display: block;
+    -webkit-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+    border: 1px solid transparent;
+    cursor: pointer;
+}
+.trash img{
+    width: 70px;
+    margin-left: 10px;
+}
+.trash h4 {
+    margin-top: 0px;
+    color: rgb(230, 230, 230);
+    margin-left: 3px;
+    font-size: 18px;
+    animation: ease-in-out 1s;
+    transition: transform;
+    font-weight: 500;
+    font-family: Segoe UI,Frutiger,Frutiger Linotype,Dejavu Sans,Helvetica Neue,Arial,sans-serif; 
+}
+.trash:hover {
+    border: 1px solid rgba(242, 242, 242, 0.333);
+    background-color: rgba(236, 236, 236, 0.257);
+}
+.taskbar {
+    display: flex;
+    position: fixed;
+    height: 60px;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    background: rgba(0, 0, 0, 0.43);
+    -webkit-box-shadow: 0 -1px 0 0 #00506b;
+    box-shadow: -3px -3px 10px #000000a2, 3px 3px 7px;
+    z-index: 1;
+    border-top: 1px solid rgba(31, 31, 31, 0.411);
+    border-left: none;
+    border-bottom: none;
+    border-right: none;
+}
+.taskbar img {
+    margin-left: 10px;
+    width: 45px;
+    border: 1px solid transparent;
+    height: 44px;
+    cursor: pointer;
+    -webkit-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+    padding-top: 5px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.taskbar img:hover {
+    border-left: 1px solid rgba(128, 128, 128, 0.46);
+    border-right: 1px solid rgba(128, 128, 128, 0.46);
+    background-color: #a7a7a734;
+
+}
+.desktop {
+    display: block;
+    width: 20px !important;
+    margin-left: auto;
+    border-top: 1px solid transparent;
+    border-left: 1px solid rgba(31, 31, 31, 0.411);
+    border-radius: 4px;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    box-shadow: -3px -3px 10px #000000a2, 3px 3px 7px;
+    background-color: rgba(242, 242, 242, 0.083);
+    cursor: pointer;
+}
+.desktop:hover {
+    background-color: rgba(242, 242, 242, 0.255);
+}
+.start {
+    margin-left: 0px !important;
+}
+.time {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    display: flex;
+    width: 100px;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 40px;
+    cursor: default;
+}
+.time p {
+    font-size: 17px;
+    color: white;
+    font-family: Segoe UI, Frutiger, Frutiger Linotype, Dejavu Sans, Helvetica Neue, Arial, sans-serif;
+    margin: 0;
+    line-height: 25px;
+}
+  
+@media only screen and (max-width: 1600px) {
+    body {
+        background-image: url(background.png);
+    }
+
+}
