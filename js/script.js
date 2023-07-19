@@ -17,3 +17,11 @@ function updateClock() {
   
   // Call the updateClock function every second to keep the clock updated
   setInterval(updateClock, 1000);
+  const startButton = document.getElementById('start');
+  const startMenu = document.getElementById('startmenu');
+  
+  startButton.addEventListener('click', toggleStartMenu);
+  
+  function toggleStartMenu() {
+    startMenu.classList.toggle('open');
+  }
